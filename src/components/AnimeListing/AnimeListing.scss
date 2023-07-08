@@ -1,0 +1,10 @@
+@import '../../common/colors.scss';
+
+.anime-list{
+    margin: 2rem 0;
+}
+
+.anime-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}

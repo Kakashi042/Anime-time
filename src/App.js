@@ -11,11 +11,13 @@ function App() {
   return (
     <BrowserRouter>
     <Header />
+    <div className='container'>
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/anime/:id' element={<AnimeDetail />} />
       <Route path='*' element={<PageNotFound />} />
     </Routes>
+    </div>
     <Footer />
     </BrowserRouter>
   );

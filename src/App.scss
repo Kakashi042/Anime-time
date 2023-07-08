@@ -1,0 +1,16 @@
+@import '../src/common/colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // background-image: url('../src/images/backdrop.jpg');
+    
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin: 0 4rem;
+}

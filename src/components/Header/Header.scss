@@ -1,0 +1,18 @@
+@import '../../common/colors.scss';
+
+.header{
+    background-color: $primary-background;
+    height: 5rem;  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.header-name{
+    font-size: 3rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+

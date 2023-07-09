@@ -1,10 +1,12 @@
 import React from 'react'
 import './AnimeCard.scss'
+import { Link } from 'react-router-dom'
 
 const AnimeCard = (props) => {
   const {data} = props
   return (
     <div className='card-item'>
+      <Link to={`/anime/${data.mal_id}`}>
       <div className='card-inner'>
         <div className='card-top'>
           <img src={data.images.jpg.image_url} alt={data.title} />
@@ -16,6 +18,7 @@ const AnimeCard = (props) => {
           </div>
         </div>
       </div>
+      </Link>
     </div>
   )
 }

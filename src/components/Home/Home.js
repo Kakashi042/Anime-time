@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import './Home.scss'
 import { useDispatch } from 'react-redux'
-import { fetchAsyncAnime } from '../../redux/slice'
+import { fetchAsyncAnime, fetchAsyncAnimeDetail } from '../../redux/slice'
 import AnimeListing from '../AnimeListing/AnimeListing'
 
-const Home = () => {
+const Home = (mal_id) => {
   const dispatch = useDispatch();
   useEffect(()=>{
     dispatch(fetchAsyncAnime());

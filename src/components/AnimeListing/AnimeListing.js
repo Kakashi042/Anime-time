@@ -6,6 +6,7 @@ import './AnimeListing.scss'
 
 const AnimeListing = () => {
   const animes = useSelector(getAnime);
+  console.log(animes)
   let renderAnime = '';
 
   // animes.map((data)=>{

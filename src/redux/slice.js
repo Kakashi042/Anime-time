@@ -16,7 +16,7 @@ export const fetchAsyncAnime = createAsyncThunk('Anime/fetchAsyncAnime',async()=
 export const fetchAsyncAnimeDetail = createAsyncThunk('Anime/fetchAsyncAnimeDetail',async(mal_id)=>{
     try{
         const response = await axios.get(options.url+`/${mal_id}/full`);
-        
+        // console.log(response.data)
         return response.data.data;
         }
         catch(error){
@@ -41,16 +41,22 @@ const slice = createSlice({
             console.log('pending')
         },
         [fetchAsyncAnime.fulfilled]:(state,{payload})=>{
-            console.log('Success')
+            console.log('Anime Success')
             return {...state, anime:payload}
         },
         [fetchAsyncAnime.rejected]:()=>{
             console.log('Rejected')
         },
+        [fetchAsyncAnimeDetail.pending]:()=>{
+            console.log('Async pending pending')
+        },
         [fetchAsyncAnimeDetail.fulfilled]:(state,{payload})=>{
-            console.log('Success')
+            console.log('ANime detail Success')
             return {...state, animeDetail:payload}
         },
+        [fetchAsyncAnimeDetail.rejected]:()=>{
+            console.log('ANime detail Reject')
+        }
     }
 })
 

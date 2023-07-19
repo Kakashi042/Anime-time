@@ -2,11 +2,22 @@
 
 
 .detail{
-    margin: 5rem 0;
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
 }
 .detail-img{
     img{
-        height: 25rem;
+        height: 30rem;
+    }
+   
+}
+
+.detail-info{
+    h3,p{
+        padding: 1rem 0;
+        color: white;
     }
 }
 
